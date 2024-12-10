@@ -1,0 +1,44 @@
+*{
+    /*Elimina el margen y padding por defecto al html.*/
+    margin:0%;
+    padding:0%;
+}
+body {
+    width: 1260px;
+    max-width: 1260px; /* Para limitar el ancho máximo */
+    height: 545px;/*500px + 45px (padding)*/
+    padding-top: 45px;/* 45px sobre 545px 45*100/545 */
+    background-color: lightseagreen;
+}
+
+main{
+    /*Cogerá la altura de las cajas*/
+    background-color: rgb(190, 152, 152);
+    width: 100%; /*100%, ya que, ocupará todo el ancho de su contenedor padre (body = 1260px)*/
+    display:flow-root;
+}
+
+#divformulario {
+    padding: 30px 1.25% 0% 1.25%; /* 10px a la derecha e izquierda */
+    height: 370px;
+    margin: 0% 1.58% 0% 1.58%; /*20*100/1260*/
+    float: left;
+    background-color: lightpink;
+    width: 60.9%; /* 63.49-2.5 (1.25+1.25 padding) */
+}
+
+aside {
+    padding: 50px 0% 0px 7.5%; /* 30px padding izquierdo */
+    width: 24.24%; /*31.74 - 7.5% (padding)*/
+    float: right;
+    background-color: lightblue;
+    height: 350px; /*350px-50px(padding)*/
+    margin: 0% 1.58% 0% 0%; /* Márgenes convertidos */
+}
+
+footer {
+    width: 100%; /*(body 1260px) = 100%*/
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    clear: both;
+}
